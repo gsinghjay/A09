@@ -124,3 +124,44 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
+/* Custom styles for the navigation menu */
+nav#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+nav#nav_menu ul li {
+	float: left;
+	position: relative;
+}
+nav#nav_menu ul li a {
+	display: block;
+	width: calc(100% / 1);
+	text-align: center;
+	padding: 1em 2.47em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+nav#nav_menu ul li a.current {
+	color: yellow;
+}
+/* Style rule for the submenu */
+nav#nav_menu ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px; /* Adjusted to push the left side in */
+	width: calc(100% - 0px); /* Adjusted width to maintain the overall width */
+}
+/* Style rule for the list items in the submenu */
+nav#nav_menu ul li ul li {
+	float: none;
+}
+/* Style rule for displaying the submenu on hover */
+nav#nav_menu ul li:hover > ul {
+	display: block;
+}
